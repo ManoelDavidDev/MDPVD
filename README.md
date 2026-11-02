@@ -8,6 +8,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Manoel%20David-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manoeldaviddev/)
 ![License](https://img.shields.io/badge/Licen%C3%A7a-Apache%202.0-blue?style=for-the-badge)
 
 <p align="center">
@@ -276,7 +277,8 @@ O banco de dados já vem provisionado com 4 operadores pré-configurados:
 ## 👤 Autor e Licença
 
 Desenvolvido por **Manoel David**  
-* Engenharia de Software / Desenvolvimento de Sistemas Comerciais
-* GitHub: [@ManoelDavidDev](https://github.com/ManoelDavidDev)
+* 🚀 Estudante de Engenharia de Software | Desenvolvedor de Software
+* 💼 **LinkedIn:** [linkedin.com/in/manoeldaviddev](https://www.linkedin.com/in/manoeldaviddev/)
+* 🐙 **GitHub:** [@ManoelDavidDev](https://github.com/ManoelDavidDev)
 
 Distribuído sob a licença **Apache 2.0**. Consulte o arquivo de licença para mais detalhes.
