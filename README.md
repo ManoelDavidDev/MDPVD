@@ -23,17 +23,18 @@
 ## 📌 Sumário
 
 1. [Sobre o Projeto](#-sobre-o-projeto)
-2. [Identidade Visual Deserto](#-identidade-visual-deserto)
-3. [Arquitetura de Software](#-arquitetura-de-software)
-4. [Módulos e Requisitos Funcionais](#-módulos-e-requisitos-funcionais)
-5. [Motor de Precificação e Promoções (RF03)](#-motor-de-precificação-e-promoções-rf03)
-6. [Emissão Fiscal NFC-e (RF08)](#-emissão-fiscal-nfc-e-rf08)
-7. [Modelagem do Banco de Dados](#-modelagem-do-banco-de-dados)
-8. [Como Executar o Projeto](#-como-executar-o-projeto)
-9. [Testes Automatizados](#-testes-automatizados)
-10. [Distribuição Nativa para Windows](#-distribuição-nativa-para-windows)
-11. [Perfis de Acesso (Demonstração)](#-perfis-de-acesso-demonstração)
-12. [Autor e Licença](#-autor-e-licença)
+2. [O Diferencial: Engenharia de Software na Era da IA](#-o-diferencial-engenharia-de-software-na-era-da-ia)
+3. [Identidade Visual Deserto](#-identidade-visual-deserto)
+4. [Arquitetura de Software](#-arquitetura-de-software)
+5. [Módulos e Requisitos Funcionais](#-módulos-e-requisitos-funcionais)
+6. [Motor de Precificação e Promoções (RF03)](#-motor-de-precificação-e-promoções-rf03)
+7. [Emissão Fiscal NFC-e (RF08)](#-emissão-fiscal-nfc-e-rf08)
+8. [Modelagem do Banco de Dados](#-modelagem-do-banco-de-dados)
+9. [Como Executar o Projeto](#-como-executar-o-projeto)
+10. [Testes Automatizados](#-testes-automatizados)
+11. [Distribuição Nativa para Windows](#-distribuição-nativa-para-windows)
+12. [Perfis de Acesso (Demonstração)](#-perfis-de-acesso-demonstração)
+13. [Autor e Licença](#-autor-e-licença)
 
 ---
 
@@ -44,6 +45,28 @@ O **MDPDV** é uma solução completa de frente de caixa (PDV) e retaguarda oper
 * **Operação Offline-First:** O sistema funciona de forma local, sem dependência mandatória de internet para registro de vendas, abertura/fechamento de caixa, movimentações financeiras e controle de estoque.
 * **Segurança e Auditoria:** Todas as operações críticas (cancelamentos, descontos excedentes, sangrias e estornos) possuem trilha permanente de auditoria (*AuditLog*) e controle de acesso granular (*RBAC*).
 * **Integridade Transacional:** O banco SQLite opera em modo **WAL (Write-Ahead Logging)** com chaves estrangeiras ativas, eliminando contenções de leitura/escrita e garantindo atomicidade total nas vendas.
+
+---
+
+## 💡 O Diferencial: Engenharia de Software na Era da IA
+
+> *"Desenvolver software com IA não é delegar o pensamento, mas sim assumir o papel de Arquiteto, especificando com rigor técnico, validando critérios de negócio e orquestrando as ferramentas certas."*
+
+Este projeto nasceu como resposta ao **Desafio 01 da Imersão Engenharia de Software: Dev na Era da IA (Alura)**, tendo como foco explorar o potencial do ecossistema do **Google AI Studio** na construção de um sistema de software corporativo completo.
+
+### 🧠 A Jornada de Engenharia e Co-criação com IA
+
+1. **Pesquisa de Mercado e Dores Reais de Negócio:**  
+   Em vez de solicitar código genérico, o desenvolvimento começou com uma imersão nas regras operacionais reais de pequenos e médios estabelecimentos comerciais. Foram identificados gargalos vitais como: a necessidade de conciliação física estrita de gaveta (separando dinheiro em espécie de meios eletrônicos), regras de promoções comerciais por atacado (como o clássico *Pack de 12 latas por R$ 42,00* sem descontos duplicados) e contingência fiscal offline.
+
+2. **Engenharia de Prompt & Arquitetura Orientada a Objetos:**  
+   A estruturação do projeto seguiu rigorosamente os pilares de **Engenharia de Prompt**, estabelecendo papéis (*System Persona* como Engenheiro Sênior e Arquiteto de Sistemas), restrições inegociáveis, separação de responsabilidades em 4 camadas (*Clean Architecture*), princípios **SOLID** e padrões de código limpo (*Clean Code*).
+
+3. **Iteração Colaborativa Multi-LLM (ChatGPT + Google AI Studio Build):**  
+   Para garantir que nenhuma regra de negócio comercial ou fiscal fosse negligenciada, utilizei o **ChatGPT** na etapa inicial como revisor e crítico de especificações, refinando os critérios de aceitação e lapidando o *Prompt Master*. Em seguida, utilizei o ambiente avançado do **Google AI Studio** como motor de engenharia para gerar a arquitetura completa, implementar a persistência ACID em SQLite, estruturar as rotinas fiscais e produzir as interfaces desktop.
+
+4. **Transformação de Paradigma:**  
+   A imersão da Alura proporcionou uma mudança fundamental de método: a transição de um desenvolvedor executor para um **Engenheiro de Software protagonista**, capaz de guiar a IA através de contexto técnico profundo, decisões arquiteturais justificadas e testes automatizados.
 
 ---
 
