@@ -1,0 +1,6 @@
+{
+  "name": "MDPDV — Ponto de Venda e Gestão Comercial",
+  "description": "Sistema desktop de Ponto de Venda (PDV) e Gestão Comercial com banco de dados SQLite local, controle de caixa, promoções por quantidade, estoque, auditoria e emissão fiscal NFC-e.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

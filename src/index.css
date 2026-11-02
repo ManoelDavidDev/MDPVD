@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-desert-sand: #E8DCC8;
+  --color-desert-cream: #F5F0E6;
+  --color-desert-surface: #FAF7F2;
+  --color-desert-terracotta: #C87952;
+  --color-desert-clay: #A65F3F;
+  --color-desert-clay-dark: #8C4D30;
+  --color-desert-brown: #80664C;
+  --color-desert-muted: #5E4A38;
+  --color-desert-graphite: #39332D;
+  --color-desert-border: #D9CCB8;
+}
+
+@layer base {
+  html, body {
+    background-color: #F5F0E6;
+    color: #39332D;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #mdpdv-printable-receipt,
+  #mdpdv-printable-receipt * {
+    visibility: visible;
+  }
+  #mdpdv-printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    padding: 4mm;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
